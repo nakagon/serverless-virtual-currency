@@ -1,0 +1,216 @@
+// ----------------------------------
+// - bootstrap.scss -
+// BootstrapのSass拡張サポート
+//----------------------------------
+
+// [bootstrap]
+//see https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+
+$font-size-base: 13px;
+$navbar-height: 40px;
+$border-radius-base: 1px;
+
+$panel-body-padding: .6em;
+$panel-heading-padding: .4em .6em;
+$panel-default-text: #666;
+
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap-sprockets";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
+
+// ### basic ###
+
+html {
+  font-size:62.5%;
+}
+body {
+  font-size: 19px;
+  // padding-top: 41px;
+  width:100%;
+  background-color:#F0F0F0;
+  overflow-x:hidden;
+}
+
+hr {
+  margin: .6em 0;
+}
+
+p {
+  margin: 0 0 3px;
+}
+
+label, .label {
+  font-weight: normal;
+  font-size: 1.2em;  
+}
+
+th {
+  font-weight: normal;
+}
+
+// ### bootstrap ###
+
+.navbar-right {
+  margin-right: 3px;
+}
+
+.list-group {
+  margin-bottom: 0;
+}
+
+.list-group-item {
+  padding: 0px 9px;
+  box-shadow: 1px 0px 0px rgba(0,0,0,.1);
+  
+}
+
+.panel {
+  margin-bottom: 9px;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.alert {
+  font-size: 11px;
+  padding: 4px 6px;
+  margin-bottom: 6px;
+}
+
+.list-group-item {
+  padding: 8px 9px;
+  margin: 10px 0;
+}
+
+.col-no-padding {
+  padding-left:0px;
+  padding-right:0px;
+}
+.navbar {
+  // min-height: 40px;
+  margin-bottom: 0px;
+}
+.nav-tabs {
+  // margin-top:12px;
+  // padding-left: 1%;
+  > li {
+    margin-bottom:0px;
+    > a {
+      // padding: 7px 22px;
+      border-top-right-radius: 1px;
+      border-top-left-radius: 1px;
+      font-size:14px;
+    }
+  }
+  > li.active {
+    > a,a:hover, a:focus {
+            
+      border:none;
+      border-bottom:solid #2C037E 4px;
+      
+    }
+  }
+}
+
+
+
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  cursor: text;
+  opacity: .65;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
+  box-shadow: none;
+}
+/* スマホ縦画面用 */
+@media screen and (max-width: 768px) {
+  .container{padding:0}
+  .container-fluid{padding:0}
+  div[class^="col-"] {padding:0}
+  .row {margin:0;}
+}
+
+@media screen and (min-width:1024px) {
+  .nav-tabs {
+    border-bottom: 1px solid #ddd;
+    padding-left: 8%;
+  }
+}
+
+$bgDefault      : #2d87e2;
+$bgHighlight    : #265d99;
+$colDefault     : #ecf0f1;
+$colHighlight   : #ecdbff;
+$dropDown       : false;
+
+.navbar-default {
+  
+  background-color: $bgDefault;
+  border-bottom-color: $bgHighlight;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  
+  .navbar-brand {
+    font-size: 20px;
+    
+    color: $colDefault;
+    &:hover, &:focus {
+      color: $colHighlight; }}
+  .navbar-text {
+    color: $colDefault; }
+  .navbar-nav {
+    margin:0;
+    > li {
+      > a {
+        color: $colDefault;
+        &:hover,  &:focus {
+          color: $colHighlight; }}
+      @if $dropDown {
+        > .dropdown-menu {
+          background-color: $bgDefault;
+          > li {
+            > a {
+              color: $colDefault;
+              &:hover,  &:focus {
+                color: $colHighlight;
+                background-color: $bgHighlight; }}
+            > .divider {
+              background-color: $bgHighlight;}}}}}
+    @if $dropDown {
+      .open .dropdown-menu > .active {
+        > a, > a:hover, > a:focus {
+          color: $colHighlight;
+          background-color: $bgHighlight; }}}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+  .navbar-toggle {
+    border-color: $bgHighlight;
+    &:hover, &:focus {
+      background-color: $bgHighlight; }
+    .icon-bar {
+      background-color: $colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $colDefault; }
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+      &:hover, &:focus {
+        color: $colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+}

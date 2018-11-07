@@ -1,0 +1,100 @@
+{
+    "Table": {
+        "TableName": "virtual-currency-news-dev",
+        "KeySchema": [
+            {
+                "AttributeName": "id",
+                "KeyType": "HASH"
+            }
+        ],
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "id",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "code",
+                "AttributeType": "S"
+            },
+
+            {
+                "AttributeName": "publishAt",
+                "AttributeType": "N"
+            },
+            {
+                "AttributeName": "score",
+                "AttributeType": "N"
+            },
+            {
+                "AttributeName": "site_id",
+                "AttributeType": "S"
+            }
+        ],
+        "GlobalSecondaryIndexes": [
+            {
+                "IndexName": "GsiteIdpublishAtIndex1",
+                "KeySchema": [
+                    {
+                        "AttributeName" : "site_id",
+                        "KeyType" : "HASH"
+                    },
+                    {
+                        "AttributeName" : "publishAt",
+                        "KeyType" : "RANGE"
+                    }
+                ],
+                "Projection": {
+                    "ProjectionType": "ALL"
+                },
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits" : 1,
+                    "WriteCapacityUnits": 1
+                }
+            },
+            {
+                "IndexName": "GcodepublishAtIndex1",
+                "KeySchema": [
+                    {
+                        "AttributeName" : "code",
+                        "KeyType" : "HASH"
+                    },
+                    {
+                        "AttributeName" : "publishAt",
+                        "KeyType" : "RANGE"
+                    }
+                ],
+                "Projection": {
+                    "ProjectionType": "ALL"
+                },
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits" : 1,
+                    "WriteCapacityUnits": 1
+                }
+            },
+            {
+                "IndexName": "GcodeScoreIndex1",
+                "KeySchema": [
+                    {
+                        "AttributeName" : "code",
+                        "KeyType" : "HASH"
+                    },
+                    {
+                        "AttributeName" : "score",
+                        "KeyType" : "RANGE"
+                    }
+                ],
+                "Projection": {
+                    "ProjectionType": "ALL"
+                },
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits" : 1,
+                    "WriteCapacityUnits": 1
+                }
+            }
+        ],
+        "ProvisionedThroughput": {
+            "ReadCapacityUnits" : 1,
+            "WriteCapacityUnits": 1
+        }
+    }
+}

@@ -1,0 +1,300 @@
+// ----------------------------------
+// - plain.scss -
+// プロジェクト汎用のscss定義
+//----------------------------------
+
+// ### common
+// body { padding-top: 70px; }
+
+.l-header {
+  // opacity: .88;  
+}
+.l-wrapper {
+}
+
+.l-row {
+    margin-bottom: 6px;
+}
+.l-nav-header {
+  background-color:#fff;
+  top:40px;
+}
+
+.l-message {
+  font-size: 11px;
+  padding: 4px 6px;
+  margin-bottom: 6px;
+  display: none;
+}
+
+.l-item {
+  // display: inline-block;
+  color:#666;
+  
+}
+
+.l-scrollable { // height指定必須
+  // width: 100%;
+  // height: 100vh;
+  
+  // padding: 0 20px;
+ 
+  // overflow-y: scroll;
+}
+
+.l-left {
+  text-align: left !important;
+}
+
+.l-center {
+  text-align: center !important;
+}
+
+.l-right {
+  text-align: right !important;
+}
+
+.l-small {
+  font-size: 90% !important;
+}
+
+.l-hide {
+  display: none;
+}
+
+// ### table
+
+.l-list-cnt {
+  margin: 0 6px 6px 0;
+  font-size: 11px;
+}
+
+.l-list-wait-row {
+  text-align: center;
+  td {
+    text-align: center;
+    width: 880px;
+    // 適切なwidth指定は各一覧毎に行ってください
+  }
+}
+
+.l-table-fixed {
+  thead, tbody {
+    display: block;
+  }
+  tbody {
+    height: 400px;
+    overflow-y: scroll;
+  }
+  th, td {
+    table-layout: fixed;
+    padding: 6px !important;
+    vertical-align: middle !important;
+  }
+  th {
+    text-align: center !important;
+    font-weight: normal;
+  }
+}
+
+// ### domain
+
+.l-item-id {
+  width: 100px;
+}
+.l-item-name {
+  width: 120px;
+}
+.l-item-name-lg {
+  width: 160px;
+}
+.l-item-type {
+  width: 100px;
+}
+.l-item-type-lg {
+  width: 140px;
+}
+.l-item-outline {
+  width: 240px;
+}
+.l-item-day {
+  width: 100%;
+  text-align: left;
+  color: #888;
+  font-size: 0.9em;
+}
+.l-item-title { 
+  font-weight:bold;
+  padding: 8px 4px;
+  line-height: 1.2em;
+}
+
+.l-item-viewscore {
+  position: relative;
+  font-size:.9em;
+  width: 98px;
+  text-align: center;
+  top: 5px;
+}
+.l-item-detail {
+  padding: 4px 0 0 0;
+}
+.l-item-image {
+  padding-right: 12px;
+  padding-left: 3px;
+  min-height:90px;
+  float:left;
+}
+.l-item-description { 
+  margin:24px 0;
+  padding:0 12px;
+}
+.l-item-sitename {
+  font-size:9px;
+  padding: 2px 0 6px 0;
+  
+}
+.l-item-button{
+  text-align:left;
+  text-decoration: none!important;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
+  border-radius: 3px;
+  color: #777!important;
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 0 rgba(0,0,0,.08);
+  text-shadow: none;
+  line-height: 23px;
+  padding: 1px 8px 0 5px;
+  width:88%;
+}
+.l-item-comment { 
+}
+.l-item-likenumber {
+  display:inline;
+  padding-left:8px;
+}
+
+.l-contents{
+  margin-top:50px;
+  margin-bottom: 60px;
+}
+.l-contents-image {
+  margin:15px 0;
+}
+
+// ### form
+
+.l-form-label {
+  color: #666;
+  font-size: 11px;
+  padding: 2px 6px;
+  margin-bottom: 3px;
+  border-left: 3px solid #aaa;
+}
+
+.l-form-value {
+  padding: 2px 6px;
+  margin-bottom: 3px;
+}
+
+// ### panel
+
+.l-panel-popup {
+  position: absolute;
+  display: none;
+  top: 60px;
+  left: 20px;
+  z-index: 99;
+}
+
+.l-panel {
+  margin-top:15px;
+  margin-bottom:30px;
+  .panel-body {
+    background-color: #fefefe;
+    color: #474646;
+    // padding: 1.6em;
+    margin-bottom: 30px;
+    
+  }
+}
+
+.l-link-wrapper {
+  position:relative;
+  left: 0;
+  right: 0;
+  margin-left: 0px;
+  z-index: 3;
+  background: #FFF;
+  border-bottom: 1px solid #EAEAEA;
+  opacity: .88;
+}
+
+// buttons
+.read-more {
+    margin-top: 14px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #37509C;
+    background-color: #FFF;
+    color: #37509C;
+    border-radius: 2px;
+    transition: all .1s linear;
+}
+.read-more:hover{
+    border-color:#15274d;
+    background-color:#15274d;
+    color:#FFF;
+    border-radius:2px;
+    transition:all .1s linear
+}
+
+// effects
+.slide-fade-enter-active {
+  transition: all .1s ease;
+}
+.slide-fade-leave-active {
+  transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+
+
+.tab-content {
+  // clear:both;
+}
+
+
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+
+.vue-affix {
+  top: 0px;
+  width: 100%;
+  z-index:100;
+  
+}
+// PC ONLY
+@media screen and (min-width:1024px) {
+  .l-item-sitename {
+    padding-left:0;
+  }
+}
+
+// SP ONLY
+@media only screen and (max-width: 767px) {
+  .affix {
+    // top: 8px;
+  }
+}
+

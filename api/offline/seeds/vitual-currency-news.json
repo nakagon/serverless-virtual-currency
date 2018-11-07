@@ -1,0 +1,29 @@
+{
+    "Table": {
+        "TableName": "virtual-currency-news-site-master-dev",
+        "KeySchema": [
+            {
+                "AttributeName": "id",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "weight",
+                "KeyType": "RANGE"
+            }
+        ],
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "id",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "weight",
+                "AttributeType": "N"
+            }
+        ],
+        "ProvisionedThroughput": {
+            "ReadCapacityUnits" : 1,
+            "WriteCapacityUnits": 1
+        }
+    }
+}

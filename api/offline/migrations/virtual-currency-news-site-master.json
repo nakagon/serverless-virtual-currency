@@ -1,0 +1,51 @@
+{
+    "Table": {
+        "TableName": "virtual-currency-news-dev",
+        "KeySchema": [
+            {
+                "AttributeName": "code",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "createdAt",
+                "KeyType": "RANGE"
+            }
+        ],
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "code",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "score",
+                "AttributeType": "N"
+            },
+            {
+                "AttributeName": "createdAt",
+                "AttributeType": "N"
+            }
+        ],
+        "LocalSecondaryIndexes": [
+            {
+                "IndexName": "scoreIndex1",
+                "KeySchema": [
+                    {
+                        "AttributeName" : "code",
+                        "KeyType" : "HASH"
+                    },
+                    {
+                        "AttributeName" : "score",
+                        "KeyType" : "RANGE"
+                    }
+                ],
+                "Projection": {
+                    "ProjectionType": "ALL"
+                }
+            }
+        ],
+        "ProvisionedThroughput": {
+            "ReadCapacityUnits" : 1,
+            "WriteCapacityUnits": 1
+        }
+    }
+}

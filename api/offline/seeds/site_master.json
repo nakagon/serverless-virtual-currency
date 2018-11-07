@@ -1,0 +1,189 @@
+[
+  {
+    "id": "virtualmoney",
+    "name": "仮想通貨まとめ",
+    "xml_url"  : "http://virtualmoney.jp/feed/items_rss.xml",
+    "base_url" : "http://virtualmoney.jp/",
+    "status"   : "1",
+    "is_valid" : "1",
+    "weight"   : 0,
+    "createdAt": 0,
+    "updatedAt": 0
+  },
+  {
+    "id": "ikedahayato",
+    "name": "まだ労働で消耗してるの？",
+    "xml_url": "http://www.ikedahayato.com/index.rdf",
+    "base_url": "http://www.ikedahayato.com/",
+    "status": 1,
+    "is_valid": 1,
+    "weight": 2,
+    "createdAt": 0,
+    "updatedAt": 0
+  },
+  {
+    "id": "tameninarupage.com",
+    "name": "誰でもわかる仮想通貨投資ブログ",
+    "xml_url": "http://tameninarupage.com/feed/",
+    "base_url": "http://tameninarupage.com/",
+    "status": 1,
+    "is_valid": 1,
+    "weight": 2,
+    "createdAt": 0,
+    "updatedAt": 0
+  },
+  {
+    "id": "virtualcoin.mobi",
+    "name": "暗号通貨アンテナ",
+    "xml_url": "http://virtualcoin.mobi/feed/",
+    "base_url": "http://virtualcoin.mobi/",
+    "status": 1,
+    "is_valid": 1,
+    "weight": 2,
+    "createdAt": 0,
+    "updatedAt": 0
+  },
+  {
+    "id": "shiodukeman.blog.fc2.com",
+    "name": "塩漬けマンの株奮闘記",
+    "xml_url": "http://shiodukeman.blog.fc2.com/?xml",
+    "base_url": "http://shiodukeman.blog.fc2.com/",
+    "status": 1,
+    "is_valid": 1,
+    "weight": 2,
+    "createdAt": 0,
+    "updatedAt": 0
+ },
+ {
+    "id": "vcoin.boy.jp",
+    "name": "仮想通貨先生　 ～ 勝ち組への道 ～",
+    "xml_url": "http://vcoin.boy.jp/coin/feed/",
+    "base_url": "http://vcoin.boy.jp/coin/",
+    "status": 1,
+    "is_valid": 1,
+    "weight": 2,
+    "createdAt": 0,
+    "updatedAt": 0
+  },
+  {
+     "id": "www.virtual-currency-trade.com",
+     "name": "仮想通貨で億万長者",
+     "xml_url": "http://www.virtual-currency-trade.com/feed/",
+     "base_url": "http://www.virtual-currency-trade.com/",
+     "status": 1,
+     "is_valid": 1,
+     "weight": 2,
+     "createdAt": 0,
+     "updatedAt": 0
+  },
+  {
+     "id": "cryptocurrency-investment.org",
+     "name": "ビットコイン攻略前線",
+     "xml_url": "http://cryptocurrency-investment.org/feed",
+     "base_url": "http://cryptocurrency-investment.org/",
+     "status": 1,
+     "is_valid": 1,
+     "weight": 2,
+     "createdAt": 0,
+     "updatedAt": 0
+  },
+  {
+     "id": "ripple.2chblog.jp",
+     "name": "Ripple(リップル）仮想通貨情報局",
+     "xml_url": "http://ripple.2chblog.jp/index.rdf",
+     "base_url": "http://ripple.2chblog.jp/",
+     "status": 1,
+     "is_valid": 1,
+     "weight": 2,
+     "createdAt": 0,
+     "updatedAt": 0
+  },
+  {
+    "id": "cryptostream.jp",
+    "name": "クリプトストリーム",
+    "xml_url": "http://www.cryptostream.jp/feed/",
+    "base_url": "http://www.cryptostream.jp/",
+    "status": 1,
+    "is_valid": 1,
+    "weight": 3,
+    "createdAt": 0,
+    "updatedAt": 0
+ },
+ {
+    "id": "coinchoice.net",
+    "name": "CoinChoice",
+    "xml_url": "https://coinchoice.net/feed/",
+    "base_url": "https://coinchoice.net/",
+    "status": 1,
+    "is_valid": 1,
+    "weight": 5,
+    "createdAt": 0,
+    "updatedAt": 0
+  },
+  {
+    "id": "bitcoiner.link",
+    "name": "貯金1000万を仮想通貨に換えた男のブログ",
+    "xml_url": "https://bitcoiner.link/feed",
+    "base_url": "https://bitcoiner.link/",
+    "status": 1,
+    "is_valid": 1,
+    "weight": 6,
+    "createdAt": 0,
+    "updatedAt": 0
+ },
+ {
+  "id": "okatyannmann-kasoutuuka",
+  "name": "岡ちゃんマンの仮想通貨で1億までの道のり",
+  "xml_url": "http://blog.livedoor.jp/okatyannmann-kasoutuuka/index.rdf",
+  "base_url": "http://blog.livedoor.jp/okatyannmann-kasoutuuka/",
+  "status": 1,
+  "is_valid": 1,
+  "weight": 7,
+  "createdAt": 0,
+  "updatedAt": 0
+  },
+  {                                              
+    "id": "coinpost.jp",                        
+    "name": "仮想通貨ニュースサイト-CoinPost",             
+    "xml_url": "http://coinpost.jp/?feed=rss2", 
+    "base_url": "http://coinpost.jp/",          
+    "status": 1,                                
+    "is_valid": 1,                              
+    "weight": 8,                                
+    "createdAt": 0,                             
+    "updatedAt": 0                              
+  },
+  {                                                
+    "id": "ethereum-japan.net/",                  
+    "name": "イーサリアム・ジャパン",                        
+    "xml_url": "https://ethereum-japan.net/feed/",
+    "base_url": "https://ethereum-japan.net/",    
+    "status": 1,                                  
+    "is_valid": 1,                                
+    "weight": 9,                                  
+    "createdAt": 0,                               
+    "updatedAt": 0                                
+  },
+  {                                             
+    "id": "coinsforest.com",                   
+    "name": "コインの森",                           
+    "xml_url": "http://coinsforest.com/feed/", 
+    "base_url": "http://coinsforest.com/",     
+    "status": 1,                               
+    "is_valid": 1,                             
+    "weight": 10,                              
+    "createdAt": 0,                            
+    "updatedAt": 0                             
+  },
+  {
+    "id": "kasoutuuka-beginner.blog.jp",
+    "name": "仮想通貨初心者入門 - ビットコインを極める",
+    "xml_url": "http://kasoutuuka-beginner.blog.jp/index.rdf",
+    "base_url": "http://kasoutuuka-beginner.blog.jp/",
+    "status": 1,
+    "is_valid": 1,
+    "weight": 11,
+    "createdAt": 0,
+    "updatedAt": 0
+ }
+]
